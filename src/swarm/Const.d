@@ -109,7 +109,7 @@ public struct NodeItem
 
     ***************************************************************************/
 
-    public hash_t toHash ( ) const
+    public hash_t toHash ( ) const nothrow @safe
     {
         return Fnv1a((&this).Address) ^ (&this).Port;
     }
